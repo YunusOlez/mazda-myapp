@@ -60,7 +60,7 @@ CustomApplicationsHandler.register("app.myapp", new CustomApplication({
 		 * (title) The title of the application in the Application menu
 		 */
 
-		title: 'myapp',
+		title: 'Hello World',
 
 		/**
 		 * (statusbar) Defines if the statusbar should be shown
@@ -130,7 +130,7 @@ CustomApplicationsHandler.register("app.myapp", new CustomApplication({
 	 */
 
 	created: function() {
-
+		this.label = $("<label/>").html("Hello World").appendTo(this.canvas);
 	},
 
 	/**
